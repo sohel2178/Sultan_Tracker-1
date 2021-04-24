@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardElevation="8dp"
+    tools:context=".DialogboxFragment">
+
+    <LinearLayout
+        android:id="@+id/dialoguebox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:src="@drawable/stlogo" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_map_24"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="Map"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="Edit Device Information"
+            android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_admin_panel_settings_24"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="Control Panel"
+            android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="Call to Driver"
+            android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_share_24"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="Share Vehicle"
+            android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_people_24"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="Shared User"
+            android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_close_24"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="Close"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
