@@ -1,4 +1,4 @@
-package com.forbitbd.sultantrackerui;
+package com.forbitbd.sultantracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.card.MaterialCardView;
 
 import java.util.Timer;
 import java.util.TimerTask;

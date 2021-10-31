@@ -1,4 +1,4 @@
-package com.forbitbd.sultantrackerui;
+package com.forbitbd.sultantracker;
 
 import android.content.Context;
 

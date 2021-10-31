@@ -1,21 +1,18 @@
-package com.forbitbd.sultantrackerui;
+package com.forbitbd.sultantracker;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
-import com.forbitbd.sultantrackerui.fragment.AllInMapFragment;
-import com.forbitbd.sultantrackerui.fragment.ProfileFragment;
-import com.forbitbd.sultantrackerui.fragment.HomeFragment;
-import com.forbitbd.sultantrackerui.fragment.NotificationFragment;
-import com.forbitbd.sultantrackerui.fragment.SettingsFragment;
+import com.forbitbd.sultantracker.fragment.AllInMapFragment;
+import com.forbitbd.sultantracker.fragment.ProfileFragment;
+import com.forbitbd.sultantracker.fragment.HomeFragment;
+import com.forbitbd.sultantracker.fragment.NotificationFragment;
+import com.forbitbd.sultantracker.fragment.SettingsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class DashboardActivity extends AppCompatActivity {

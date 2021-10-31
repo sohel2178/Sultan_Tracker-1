@@ -1,4 +1,4 @@
-package com.forbitbd.sultantrackerui;
+package com.forbitbd.sultantracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
