@@ -58,23 +58,23 @@ public class DashboardActivity extends AppCompatActivity {
         transaction.commit();
     }
 
-    @Override
-    public void onBackPressed() {
-        AlertDialog alertDialog = new AlertDialog.Builder(DashboardActivity.this)
-                .setIcon(R.drawable.stlogo)
-                .setMessage("Did you want to close the application?")
-                .setCancelable(true)
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finishAffinity();
-                    }
-                })
-                .setNeutralButton(R.string.common_google_play_services_update_title, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                    }
-                })
-                .setNegativeButton(android.R.string.no, null).show();
-    }
+//    @Override
+//    public void onBackPressed() {
+//        AlertDialog alertDialog = new AlertDialog.Builder(DashboardActivity.this)
+//                .setIcon(R.drawable.stlogo)
+//                .setMessage("Did you want to close the application?")
+//                .setCancelable(true)
+//                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        finishAffinity();
+//                    }
+//                })
+//                .setNeutralButton(R.string.common_google_play_services_update_title, new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                    }
+//                })
+//                .setNegativeButton(android.R.string.no, null).show();
+//    }
 }
