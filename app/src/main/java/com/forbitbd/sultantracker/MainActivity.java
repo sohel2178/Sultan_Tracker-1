@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private MaterialButton btnlogin;
     private TextView btnsignup;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +64,6 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 handler.post(update);
             }
-        }, 2000, 2000);
+        }, 3000, 3000);
     }
 }
