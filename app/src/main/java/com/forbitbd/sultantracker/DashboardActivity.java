@@ -8,11 +8,11 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.forbitbd.sultantracker.fragment.AllInMapFragment;
-import com.forbitbd.sultantracker.fragment.ProfileFragment;
-import com.forbitbd.sultantracker.fragment.HomeFragment;
-import com.forbitbd.sultantracker.fragment.NotificationFragment;
-import com.forbitbd.sultantracker.fragment.SettingsFragment;
+import com.forbitbd.sultantracker.ui.viewall.AllInMapFragment;
+import com.forbitbd.sultantracker.ui.profile.ProfileFragment;
+import com.forbitbd.sultantracker.ui.home.HomeFragment;
+import com.forbitbd.sultantracker.ui.notification.NotificationFragment;
+import com.forbitbd.sultantracker.ui.settings.SettingsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class DashboardActivity extends AppCompatActivity {
@@ -39,9 +39,6 @@ public class DashboardActivity extends AppCompatActivity {
                     return true;
                 } else if (id == R.id.settings) {
                     loadFragment(new SettingsFragment());
-                    return true;
-                } else if (id == R.id.profile) {
-                    loadFragment(new ProfileFragment());
                     return true;
                 }
                 return false;

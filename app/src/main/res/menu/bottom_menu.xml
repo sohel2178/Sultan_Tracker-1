@@ -29,10 +29,4 @@
         android:enabled="true"
         app:showAsAction="ifRoom"/>
 
-    <item
-        android:id="@+id/profile"
-        android:icon="@drawable/ic_baseline_person_24"
-        android:title="Profile"
-        android:enabled="true"
-        app:showAsAction="ifRoom"/>
 </menu>

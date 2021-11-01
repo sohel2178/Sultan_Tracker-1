@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#EFF1F1"
-    tools:context=".fragment.ProfileFragment">
+    tools:context=".ui.profile.ProfileFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -22,8 +22,9 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@color/orange"
+                android:src="@drawable/ic_baseline_person_24"
                 android:layout_gravity="center"
+                android:background="#A1A1A1"
                 android:layout_marginTop="20dp"/>
 
             <TextView
