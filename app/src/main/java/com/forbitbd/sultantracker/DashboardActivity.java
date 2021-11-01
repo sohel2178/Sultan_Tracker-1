@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.forbitbd.sultantracker.ui.viewall.AllInMapFragment;
-import com.forbitbd.sultantracker.ui.profile.ProfileFragment;
 import com.forbitbd.sultantracker.ui.home.HomeFragment;
 import com.forbitbd.sultantracker.ui.notification.NotificationFragment;
 import com.forbitbd.sultantracker.ui.settings.SettingsFragment;

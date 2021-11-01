@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.forbitbd.sultantracker.R;
+import com.forbitbd.sultantracker.ui.CustomerServiceActivity;
+import com.forbitbd.sultantracker.ui.profile.ProfileActivity;
 
 import java.util.ArrayList;
 
@@ -54,13 +56,15 @@ public class SettingsFragment extends Fragment {
 
         adapter = new SettingsAdapter(settingsList, new SettignsClickListener() {
             @Override
-            public void ItemClick(Settings settings) {
-                int id = view.getId();
-                if (id == 0 ){
-//                    startActivity(new Intent(getContext(),ProfileActivity.class));
+            public void ItemClick(int adapterPosition) {
+                if (adapterPosition == 0 ){
+                    startActivity(new Intent(getContext(), ProfileActivity.class));
+                }else if (adapterPosition == 7){
+                    startActivity(new Intent(getContext(), CustomerServiceActivity.class));
                 }
             }
         });
+
         recyclerView.setAdapter(adapter);
         return view;
     }
