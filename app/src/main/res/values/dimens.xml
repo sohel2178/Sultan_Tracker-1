@@ -2,14 +2,19 @@
 <resources>
 
     <dimen name="small_padding">4dp</dimen>
+    <dimen name="ssmall_padding">6dp</dimen>
     <dimen name="medium_padding">8dp</dimen>
     <dimen name="standard_padding">10dp</dimen>
     <dimen name="large_padding">16dp</dimen>
     <dimen name="xlarge_padding">20dp</dimen>
 
 
-    <dimen name="basic">16dp</dimen>
+<!--    <dimen name="basic">16dp</dimen>-->
     <dimen name="normal">18dp</dimen>
-    <dimen name="standard">20dp</dimen>
+<!--    <dimen name="standard">20dp</dimen>-->
+
+    <dimen name="normalText">18sp</dimen>
+    <dimen name="mediumText">20sp</dimen>
+    <dimen name="largeText">25sp</dimen>
 
 </resources>

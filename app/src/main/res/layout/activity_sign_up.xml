@@ -110,7 +110,7 @@
                         android:layout_marginTop="10dp"
                         android:background="@color/orange"
                         android:text="Sign Up"
-                        android:textSize="20sp" />
+                        android:textSize="@dimen/normalText" />
 
                 </LinearLayout>
 

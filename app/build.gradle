@@ -40,7 +40,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
 
-
     //for icon in the developer contact//
     implementation 'info.androidhive:fontawesome:0.0.5'
+
+    implementation 'com.github.vipulasri:timelineview:1.1.5'
+
 }

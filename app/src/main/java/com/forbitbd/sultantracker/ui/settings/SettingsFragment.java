@@ -12,8 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.forbitbd.sultantracker.R;
-import com.forbitbd.sultantracker.ui.CustomerServiceActivity;
+import com.forbitbd.sultantracker.ui.settings.alertsetting.AlertSettingActivity;
+import com.forbitbd.sultantracker.ui.settings.company.CompanyInfoActivity;
+import com.forbitbd.sultantracker.ui.settings.customerservice.CustomerServiceActivity;
 import com.forbitbd.sultantracker.ui.profile.ProfileActivity;
+import com.forbitbd.sultantracker.ui.settings.expense.ExpenseActivity;
+import com.forbitbd.sultantracker.ui.settings.language.LanguageSettingActivity;
+import com.forbitbd.sultantracker.ui.settings.payment.PaymentActivity;
+import com.forbitbd.sultantracker.ui.settings.sharedvehicle.SharedVehicleActivity;
 
 import java.util.ArrayList;
 
@@ -46,11 +52,11 @@ public class SettingsFragment extends Fragment {
         settingsList = new ArrayList<>();
         settingsList.add(new Settings("Profile",R.drawable.ic_baseline_share_24));
         settingsList.add(new Settings("Shared Vehicles",R.drawable.ic_baseline_person_24));
-        settingsList.add(new Settings("Alert",R.drawable.ic_baseline_bus_alert_24));
-        settingsList.add(new Settings("Payment",R.drawable.ic_baseline_payment_24));
-        settingsList.add(new Settings("Contact",R.drawable.ic_baseline_perm_contact_calendar_24));
+        settingsList.add(new Settings("Alert Settings",R.drawable.ic_baseline_bus_alert_24));
+        settingsList.add(new Settings("Payment Guide",R.drawable.ic_baseline_payment_24));
         settingsList.add(new Settings("Language",R.drawable.ic_baseline_language_24));
         settingsList.add(new Settings("Expenses",R.drawable.ic_baseline_attach_money_24));
+        settingsList.add(new Settings("Company Information",R.drawable.ic_baseline_perm_contact_calendar_24));
         settingsList.add(new Settings("Customer Service",R.drawable.ic_baseline_person_24));
         settingsList.add(new Settings("Logout",R.drawable.ic_baseline_login_24));
 
@@ -59,8 +65,22 @@ public class SettingsFragment extends Fragment {
             public void ItemClick(int adapterPosition) {
                 if (adapterPosition == 0 ){
                     startActivity(new Intent(getContext(), ProfileActivity.class));
+                }else if (adapterPosition == 1){
+                    startActivity(new Intent(getContext(), SharedVehicleActivity.class));
+                }else if (adapterPosition == 2){
+                    startActivity(new Intent(getContext(), AlertSettingActivity.class));
+                }else if (adapterPosition == 3){
+                    startActivity(new Intent(getContext(), PaymentActivity.class));
+                }else if (adapterPosition == 4){
+                    startActivity(new Intent(getContext(), LanguageSettingActivity.class));
+                }else if (adapterPosition == 5){
+                    startActivity(new Intent(getContext(), ExpenseActivity.class));
+                }else if (adapterPosition == 6){
+                    startActivity(new Intent(getContext(), CompanyInfoActivity.class));
                 }else if (adapterPosition == 7){
                     startActivity(new Intent(getContext(), CustomerServiceActivity.class));
+                }else if (adapterPosition == 8){
+//                    startActivity(new Intent(getContext(), SharedVehicleActivity.class));
                 }
             }
         });

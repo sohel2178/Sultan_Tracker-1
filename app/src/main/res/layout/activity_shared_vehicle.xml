@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.sharedvehicle.SharedVehicleActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/WhiteCursorSearchView"
+        android:id="@+id/search_view"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search Vehicle by Vehicle Reg, Driver name or phone"
+        android:minHeight="40dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_vertical"/>
+
+</RelativeLayout>

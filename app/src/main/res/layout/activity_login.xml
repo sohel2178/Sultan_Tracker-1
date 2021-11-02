@@ -109,7 +109,7 @@
                         android:layout_marginTop="10dp"
                         android:background="@color/orange"
                         android:text="Login"
-                        android:textSize="20sp" />
+                        android:textSize="@dimen/normalText" />
 
                 </LinearLayout>
 
@@ -146,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:text="SIGN UP"
                     android:clickable="true"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/red" />
 
             </LinearLayout>
 

@@ -9,15 +9,21 @@
         <entry key="..\:/Android Studio/TEST/Sultan-Tracker-Ui/app/src/main/res/layout/fragment_profile.xml" value="0.18" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/drawable-v21/ripple.xml" value="0.2203125" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/drawable/ripple.xml" value="0.2203125" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_alert_setting.xml" value="0.17980072463768115" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_company_info.xml" value="0.25" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_customer_service.xml" value="0.22" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_language_setting.xml" value="0.19882246376811594" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_launcher.xml" value="0.12771739130434784" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_payment.xml" value="0.25" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_profile.xml" value="0.17617753623188406" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_shared_vehicle.xml" value="0.18432971014492755" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_home.xml" value="0.15" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_profile.xml" value="0.18" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_settings.xml" value="0.17617753623188406" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/item_settings.xml" value="0.17617753623188406" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/menu/bottom_menu.xml" value="0.5436893203883495" />
       </map>
     </option>
   </component>

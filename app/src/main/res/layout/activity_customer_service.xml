@@ -5,235 +5,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.CustomerServiceActivity"
+    tools:context=".ui.settings.customerservice.CustomerServiceActivity"
     android:background="#F1F1F1"
     android:padding="@dimen/standard_padding">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/forbit"
+
+    <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardElevation="2dp"
-        android:layout_marginBottom="@dimen/standard_padding">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/medium_padding"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
-                android:padding="@dimen/medium_padding"
-                android:text="@string/company_information"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/standard"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_marginTop="@dimen/standard_padding"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/forbiticon"/>
-
-            <TextView
-                android:text="@string/forbit_limited"
-                android:gravity="center"
-                style="@style/nametext"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/medium_padding"
-                android:gravity="center">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/medium_padding">
-
-                    <info.androidhive.fontawesome.FontTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/fa_map_marker_alt_solid"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/standard"
-                        app:solid_icon="true"/>
-
-                    <TextView
-                        android:layout_marginStart="@dimen/standard_padding"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/mirpur_1_dhaka_1216_bangladesh"
-                        android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/normal"
-                        android:layout_marginLeft="@dimen/standard_padding" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/medium_padding">
-
-                    <info.androidhive.fontawesome.FontTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/fa_envelope_solid"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/standard"
-                        app:solid_icon="true" />
-
-                    <TextView
-                        android:layout_marginStart="@dimen/standard_padding"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/forbit_bd_gmail_com"
-                        android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/normal"
-                        android:layout_marginLeft="@dimen/standard_padding" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:src="@drawable/callcenter" />
 
     <TextView
-        android:id="@+id/devinfo"
+        android:id="@+id/customerservice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/forbit"
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:padding="@dimen/medium_padding"
         android:text="@string/customer_service"
         android:textColor="@android:color/black"
-        android:textSize="@dimen/standard"
-        android:textStyle="bold" />
+        android:textSize="@dimen/mediumText"
+        android:textStyle="bold"
+        android:layout_below="@id/image"/>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/abid"
+        android:id="@+id/customercare"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/devinfo"
+        android:layout_below="@+id/customerservice"
         android:layout_marginBottom="@dimen/standard_padding"
         app:cardElevation="2dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/standard_padding"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_padding">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="horizontal">
+                    android:text="Customer Support"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/mediumText" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="5dp"
-                        android:text="Email:"
-                        android:textSize="@dimen/normal" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="sultantracker.vts@gmail.com"
-                        android:textSize="@dimen/normal" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="@string/fa_phone_solid"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/mediumText"
+                    app:solid_icon="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="center_vertical"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="5dp"
-                        android:text="Customer Support:"
-                        android:textSize="@dimen/normal" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="+8801313343311"
-                        android:textSize="@dimen/normal" />
-                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_padding">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="horizontal">
+                    android:text="Sales Department"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/mediumText" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="5dp"
-                        android:text="Sales Executive:"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="+8801313343300"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginRight="5dp"
-                        android:text="Facebook Page:"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Sultan VTS"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
+                    android:text="@string/fa_phone_solid"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/mediumText"
+                    app:solid_icon="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="center_vertical"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/callcenter" />
-
 
 </RelativeLayout>

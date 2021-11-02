@@ -1,4 +1,4 @@
-package com.forbitbd.sultantracker.ui;
+package com.forbitbd.sultantracker.ui.settings.customerservice;
 
 import androidx.appcompat.app.AppCompatActivity;
 

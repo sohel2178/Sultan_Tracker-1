@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:padding="@dimen/standard_padding"
+    tools:context=".ui.settings.company.CompanyInfoActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/forbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:layout_marginBottom="@dimen/standard_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/company_information"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/mediumText"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/standard_padding"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/forbiticon"/>
+
+            <TextView
+                android:text="@string/forbit_limited"
+                android:gravity="center"
+                style="@style/nametext"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_padding"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_padding">
+
+                    <info.androidhive.fontawesome.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fa_map_marker_alt_solid"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/normalText"
+                        app:solid_icon="true"/>
+
+                    <TextView
+                        android:layout_marginStart="@dimen/standard_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mirpur_1_dhaka_1216_bangladesh"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/normalText"
+                        android:layout_marginLeft="@dimen/standard_padding" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_padding">
+
+                    <info.androidhive.fontawesome.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fa_envelope_solid"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/normalText"
+                        app:solid_icon="true" />
+
+                    <TextView
+                        android:layout_marginStart="@dimen/standard_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forbit_bd_gmail_com"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/normalText"
+                        android:layout_marginLeft="@dimen/standard_padding" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/st"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:layout_below="@id/forbit"
+        android:layout_marginBottom="@dimen/standard_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_padding"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/medium_padding"
+                android:text="Our Product"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/mediumText"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/standard_padding"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/stlogo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/medium_padding"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_padding">
+
+                    <info.androidhive.fontawesome.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fa_envelope_solid"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/normalText"
+                        app:solid_icon="true" />
+
+                    <TextView
+                        android:layout_marginStart="@dimen/standard_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sultantracker.vts@gmail.com"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/normalText"
+                        android:layout_marginLeft="@dimen/standard_padding" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_padding">
+
+                    <info.androidhive.fontawesome.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fa_phone_square_solid"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/normalText"
+                        app:solid_icon="true" />
+
+                    <TextView
+                        android:layout_marginStart="@dimen/standard_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+8801313343300 (For Emergency)"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/normalText"
+                        android:layout_marginLeft="@dimen/standard_padding" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp"
+    android:layout_margin="@dimen/ssmall_padding"
     android:clickable="true"
     android:focusable="true"
     android:background="?attr/selectableItemBackground"
@@ -20,9 +20,8 @@
                 android:id="@+id/icon"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginRight="20dp"
-                android:padding="6dp"
+                android:layout_marginRight="@dimen/xlarge_padding"
+                android:padding="@dimen/ssmall_padding"
                 android:src="@drawable/ic_baseline_share_24" />
 
             <TextView
@@ -32,9 +31,8 @@
                 android:layout_gravity="center"
                 android:text="Shared Vehicles"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="@dimen/normal" />
 
         </LinearLayout>
-
 
 </RelativeLayout>

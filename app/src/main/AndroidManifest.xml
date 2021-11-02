@@ -12,7 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SultanTracker">
         <activity
-            android:name=".ui.CustomerServiceActivity"
+            android:name=".ui.settings.expense.ExpenseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.settings.company.CompanyInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.settings.language.LanguageSettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.settings.alertsetting.AlertSettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.settings.sharedvehicle.SharedVehicleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.settings.payment.PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.settings.customerservice.CustomerServiceActivity"
             android:exported="true" />
         <activity
             android:name=".ui.profile.ProfileActivity"
