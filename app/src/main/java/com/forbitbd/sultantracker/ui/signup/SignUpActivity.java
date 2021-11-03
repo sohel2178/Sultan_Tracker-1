@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.forbitbd.sultantracker.R;
-import com.forbitbd.sultantracker.SliderAdapter;
+import com.forbitbd.sultantracker.ui.main.SliderAdapter;
 
 import java.util.Timer;
 import java.util.TimerTask;

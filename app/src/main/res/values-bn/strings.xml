@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sultan Tracker</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="customer_service">কাস্টমার সার্ভিস</string>
+    <string name="company_information">কোম্পানীর তথ্য</string>
+    <string name="forbit_limited">ফরবিট লিমিটেড</string>
+    <string name="mirpur_1_dhaka_1216_bangladesh">মিরপুর-১, ঢাকা-১২১৬, বাংলাদেশ</string>
+    <string name="forbit_bd_gmail_com">forbit.bd@gmail.com</string>
+    <string name="payment_guide_title">আপনি আপনার বিকাশ অ্যাকাউন্ট থেকে আমাদের বিকাশ মার্চেন্ট অ্যাকাউন্টে পেমেন্ট করতে পারবেন।</string>
+
+    <string name="language_settings">ভাষা সেটিংস</string>
+    <string name="setting_app_language">অ্যাপের ভাষা সেটিংস</string>
+    <string name="bangla">বাংলা</string>
+    <string name="english">ইংরেজি</string>
+    <string name="settings">সেটিংস</string>
+    <string name="account_amp_vehicle_information">একাউন্ট এবং ভেহিক্যাল তথ্য</string>
+
+    <string name="logout">লগআউট</string>
+    <string name="company_info">কোম্পানীর তথ্য</string>
+    <string name="expenses">ব্যায়সমুহ</string>
+    <string name="language">ভাষা</string>
+    <string name="payment_guide">পেমেন্ট গাইড</string>
+    <string name="alert_setting">এলার্ট সেটিংস</string>
+    <string name="shared_vehicles">শেয়ারড ভেহিকেল</string>
+    <string name="profile">প্রোফাইল</string>
+
+    <string name="notification">নোটিফিকেশন</string>
+    <string name="alerts">এলার্টস</string>
+    <string name="list_view">লিস্ট ভিউ</string>
+    <string name="map_view">ম্যাপ ভিউ</string>
+
+    <string-array name="title_list">
+        <item>ধাপ ১</item>
+        <item>ধাপ ২</item>
+        <item>ধাপ ৩</item>
+        <item>ধাপ ৪</item>
+        <item>ধাপ ৫</item>
+        <item>ধাপ ৬</item>
+        <item>ধাপ ৭</item>
+        <item>সম্পন্ন!</item>
+    </string-array>
+
+    <string-array name="content_list">
+        <item><b>*২৪৭#</b> ডায়াল করে আপনার বিকাশ মোবাইল মেনুতে যান।</item>
+        <item><b>সেন্ড মানি</b> অপশনটি সিলেক্ট করুন।</item>
+        <item><b>০১৩১৩৩৪৩৩১১</b> নম্বরটি লিখুন।</item>
+        <item>আপনি <b>কত টাকা</b> পাঠাতে চান তা লিখুন।</item>
+        <item>আপনার বিলের রেফারেন্স হিসেবে আপনার <b>গাড়ির রেজিস্ট্রেশন নম্বর</b> লিখুন।</item>
+        <item>কাউন্টার নম্বর <b>১</b> লিখুন।</item>
+        <item>কনফার্ম করার জন্য আপনার বিকাশ মেনু <b>পিন</b> দিন।</item>
+        <item>আপনি <b>আমাদের এবং বিকাশ এর পক্ষ থেকে ফিরতি মেসেজ পাবেন।</b></item>
+    </string-array>
+
+</resources>

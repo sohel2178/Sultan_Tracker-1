@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFF1F1"
+    android:background="@color/BackgroundColor"
     android:orientation="vertical"
     tools:context=".ui.settings.SettingsFragment">
 
@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Settings"
+            android:text="@string/settings"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Account &amp; Vehicle Information"
+            android:text="@string/account_amp_vehicle_information"
             android:textColor="@color/black"
             android:textSize="18sp" />
 

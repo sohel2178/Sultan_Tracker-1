@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.forbitbd.sultantracker.DashboardActivity;
 import com.forbitbd.sultantracker.R;
 import com.forbitbd.sultantracker.ui.signup.SignUpActivity;
-import com.forbitbd.sultantracker.SliderAdapter;
+import com.forbitbd.sultantracker.ui.main.SliderAdapter;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.Timer;

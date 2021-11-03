@@ -50,15 +50,15 @@ public class SettingsFragment extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
 
         settingsList = new ArrayList<>();
-        settingsList.add(new Settings("Profile",R.drawable.ic_baseline_share_24));
-        settingsList.add(new Settings("Shared Vehicles",R.drawable.ic_baseline_person_24));
-        settingsList.add(new Settings("Alert Settings",R.drawable.ic_baseline_bus_alert_24));
-        settingsList.add(new Settings("Payment Guide",R.drawable.ic_baseline_payment_24));
-        settingsList.add(new Settings("Language",R.drawable.ic_baseline_language_24));
-        settingsList.add(new Settings("Expenses",R.drawable.ic_baseline_attach_money_24));
-        settingsList.add(new Settings("Company Information",R.drawable.ic_baseline_perm_contact_calendar_24));
-        settingsList.add(new Settings("Customer Service",R.drawable.ic_baseline_person_24));
-        settingsList.add(new Settings("Logout",R.drawable.ic_baseline_login_24));
+        settingsList.add(new Settings(getString(R.string.profile),R.drawable.ic_baseline_share_24));
+        settingsList.add(new Settings(getString(R.string.shared_vehicles),R.drawable.ic_baseline_person_24));
+        settingsList.add(new Settings(getString(R.string.alert_setting),R.drawable.ic_baseline_bus_alert_24));
+        settingsList.add(new Settings(getString(R.string.payment_guide),R.drawable.ic_baseline_payment_24));
+        settingsList.add(new Settings(getString(R.string.language),R.drawable.ic_baseline_language_24));
+        settingsList.add(new Settings(getString(R.string.expenses),R.drawable.ic_baseline_attach_money_24));
+        settingsList.add(new Settings(getString(R.string.company_info),R.drawable.ic_baseline_perm_contact_calendar_24));
+        settingsList.add(new Settings(getString(R.string.customer_service),R.drawable.ic_baseline_person_24));
+        settingsList.add(new Settings(getString(R.string.logout),R.drawable.ic_baseline_login_24));
 
         adapter = new SettingsAdapter(settingsList, new SettignsClickListener() {
             @Override

@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Alert Settings"
+                android:text="@string/language_settings"
                 android:textColor="@color/black"
                 android:textSize="@dimen/largeText"
                 android:textStyle="bold" />
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Setting Vehicle Alerts"
+                android:text="@string/setting_app_language"
                 android:textColor="@color/black"
                 android:textSize="@dimen/normalText" />
 
@@ -55,7 +55,6 @@
             android:orientation="vertical"
             android:layout_margin="@dimen/ssmall_padding">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,10 +67,10 @@
                     android:layout_margin="@dimen/standard_padding"/>
 
                 <Switch
-                    android:id="@+id/ignition"
+                    android:id="@+id/english"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="English"
+                    android:text="@string/english"
                     android:textSize="@dimen/normalText"
                     android:layout_margin="@dimen/standard_padding"/>
 
@@ -89,10 +88,10 @@
                     android:layout_margin="@dimen/standard_padding"/>
 
                 <Switch
-                    android:id="@+id/fuelcut"
+                    android:id="@+id/bangla"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="বাংলা"
+                    android:text="@string/bangla"
                     android:textSize="@dimen/normalText"
                     android:layout_margin="@dimen/standard_padding"/>
 

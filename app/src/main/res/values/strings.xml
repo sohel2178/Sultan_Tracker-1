@@ -9,4 +9,45 @@
     <string name="mirpur_1_dhaka_1216_bangladesh">Mirpur-1, Dhaka-1216, Bangladesh</string>
     <string name="forbit_bd_gmail_com">forbit.bd@gmail.com</string>
     <string name="payment_guide_title">You can make payments from your bKash account to our bKash Merchant account</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="setting_app_language">Setting App Language</string>
+    <string name="bangla">Bangla</string>
+    <string name="english">English</string>
+    <string name="account_amp_vehicle_information">Account And Vehicle Information</string>
+    <string name="logout">Logout</string>
+    <string name="company_info">Company Information</string>
+    <string name="expenses">Expenses</string>
+    <string name="language">Language</string>
+    <string name="payment_guide">Payment Guide</string>
+    <string name="alert_setting">Alert Settings</string>
+    <string name="shared_vehicles">Shared Vehicles</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notification</string>
+    <string name="alerts">Alerts</string>
+    <string name="list_view">List View</string>
+    <string name="map_view">Map View</string>
+
+    <string-array name="title_list">
+        <item>Step 1</item>
+        <item>Step 2</item>
+        <item>Step 3</item>
+        <item>Step 4</item>
+        <item>Step 5</item>
+        <item>Step 6</item>
+        <item>Step 7</item>
+        <item>Done !</item>
+    </string-array>
+
+    <string-array name="content_list">
+        <item>Go to your bKash Mobile Menu by Dialing <b>*247#</b></item>
+        <item>Choose <b>Send Money</b></item>
+        <item>Enter <b>01313343311</b> Number</item>
+        <item>Enter the <b>amount</b> you want to pay</item>
+        <item>Enter a reference against your payment <b>(Your Car Registration Number)</b> </item>
+        <item>Enter <b>1</b> as Counter Number</item>
+        <item>Now Enter your bKash Mobile Menu <b>PIN</b> to confirm</item>
+        <item>You will receive a confirmation message from <b>us and bKash</b></item>
+    </string-array>
+
 </resources>

@@ -12,14 +12,19 @@ import com.forbitbd.sultantracker.ui.viewall.AllInMapFragment;
 import com.forbitbd.sultantracker.ui.home.HomeFragment;
 import com.forbitbd.sultantracker.ui.notification.NotificationFragment;
 import com.forbitbd.sultantracker.ui.settings.SettingsFragment;
+import com.forbitbd.sultantracker.utils.BaseActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class DashboardActivity extends AppCompatActivity {
+import java.util.Locale;
+
+public class DashboardActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        loadLocale();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         loadFragment(new HomeFragment());
@@ -51,23 +56,8 @@ public class DashboardActivity extends AppCompatActivity {
         transaction.commit();
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        AlertDialog alertDialog = new AlertDialog.Builder(DashboardActivity.this)
-//                .setIcon(R.drawable.stlogo)
-//                .setMessage("Did you want to close the application?")
-//                .setCancelable(true)
-//                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        finishAffinity();
-//                    }
-//                })
-//                .setNeutralButton(R.string.common_google_play_services_update_title, new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                    }
-//                })
-//                .setNegativeButton(android.R.string.no, null).show();
-//    }
+    @Override
+    public void onBackPressed() {
+       finishAffinity();
+    }
 }

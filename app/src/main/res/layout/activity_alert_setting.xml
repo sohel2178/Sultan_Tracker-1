@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Alert Settings"
+                android:text="Language"
                 android:textColor="@color/black"
                 android:textSize="@dimen/largeText"
                 android:textStyle="bold" />
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Setting Vehicle Alerts"
+                android:text="App Language Setting"
                 android:textColor="@color/black"
                 android:textSize="@dimen/normalText" />
 

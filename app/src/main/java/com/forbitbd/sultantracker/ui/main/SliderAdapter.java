@@ -1,4 +1,4 @@
-package com.forbitbd.sultantracker;
+package com.forbitbd.sultantracker.ui.main;
 
 import android.content.Context;
 import android.os.Build;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
+
+import com.forbitbd.sultantracker.R;
 
 
 public class SliderAdapter extends PagerAdapter {
