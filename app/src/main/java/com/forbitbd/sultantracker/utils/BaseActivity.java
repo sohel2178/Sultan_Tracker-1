@@ -1,43 +1,57 @@
 package com.forbitbd.sultantracker.utils;
 
-import android.app.Activity;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
+import android.os.Bundle;
+import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import com.forbitbd.sultantracker.R;
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Locale;
 
 public class BaseActivity extends AppCompatActivity {
 
-
-//
-//    public void setLanguage(Activity activity, String language){
-//        Locale locale = new Locale(language);
-//        Resources resources = activity.getResources();
-//        Configuration configuration = resources.getConfiguration();
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-//            configuration.setLocale(locale);
-//        }
-//        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-//
-//    }
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        loadLocale();
+       checkInternet();
+    }
 
     public void setLocale(String language){
-       Locale locale = new Locale(language);
-       Locale.setDefault(locale);
-       Configuration configuration = new Configuration();
-       getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
-       SharedPreferences.Editor editor = getSharedPreferences("setting",MODE_PRIVATE).edit();
-       editor.putString("mylang", language);
-       editor.apply();
+        Locale locale = new Locale(language);
+        Resources resources = this.getResources();
+        Configuration configuration = resources.getConfiguration();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            configuration.setLocale(locale);
+        }
+        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
     }
 
     public void loadLocale(){
-        SharedPreferences preferences = getSharedPreferences("setting", Activity.MODE_PRIVATE);
-        String language = preferences.getString("mylang", "");
-        setLocale(language);
+        if(AppPreference.getInstance(this).getLanguage().equals("EN")){
+            setLocale("en");
+        }else {
+            setLocale("bn");
+        }
+    }
+
+    public void checkInternet(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo wifi = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+        NetworkInfo data = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+
+        if ((wifi != null && data != null) && (wifi.isConnected() | data.isConnected())){
+        }else{
+        }
     }
 }

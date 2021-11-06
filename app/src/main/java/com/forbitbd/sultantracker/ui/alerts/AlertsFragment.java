@@ -1,4 +1,4 @@
-package com.forbitbd.sultantracker.ui.viewall;
+package com.forbitbd.sultantracker.ui.alerts;
 
 import android.os.Bundle;
 
@@ -10,26 +10,25 @@ import android.view.ViewGroup;
 
 import com.forbitbd.sultantracker.R;
 
+public class AlertsFragment extends Fragment implements AlertsContract.View{
 
-public class AllInMapFragment extends Fragment {
-
-
-
-    public AllInMapFragment() {
+    private AlertsPresenter mPresenter;
+    public AlertsFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        mPresenter = new AlertsPresenter(this);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_all_in_map, container, false);
+        View view = inflater.inflate(R.layout.fragment_alerts, container, false);
+
+        return view;
     }
 }

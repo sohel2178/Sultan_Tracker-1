@@ -1,4 +1,4 @@
-package com.forbitbd.sultantracker.ui.home;
+package com.forbitbd.sultantracker.ui.listview;
 
 import android.os.Bundle;
 
@@ -13,26 +13,27 @@ import com.forbitbd.sultantracker.fragment.DialogboxFragment;
 import com.google.android.material.card.MaterialCardView;
 
 
-public class HomeFragment extends Fragment {
+public class ListViewFragment extends Fragment implements ListViewContract.View{
 
     private MaterialCardView mtcard;
+    private ListViewPresenter mPresenter;
 
-    public HomeFragment() {
+    public ListViewFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        mPresenter = new ListViewPresenter(this);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_list_view, container, false);
 
         mtcard = view.findViewById(R.id.vehicle);
         mtcard.setOnClickListener(new View.OnClickListener() {

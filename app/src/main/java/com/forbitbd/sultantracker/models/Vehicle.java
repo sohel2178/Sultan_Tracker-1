@@ -1,4 +1,4 @@
-package com.forbitbd.sultantracker.ui.home;
+package com.forbitbd.sultantracker.models;
 
 import java.io.Serializable;
 

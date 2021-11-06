@@ -50,15 +50,16 @@ public class SettingsFragment extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
 
         settingsList = new ArrayList<>();
-        settingsList.add(new Settings(getString(R.string.profile),R.drawable.ic_baseline_share_24));
-        settingsList.add(new Settings(getString(R.string.shared_vehicles),R.drawable.ic_baseline_person_24));
-        settingsList.add(new Settings(getString(R.string.alert_setting),R.drawable.ic_baseline_bus_alert_24));
-        settingsList.add(new Settings(getString(R.string.payment_guide),R.drawable.ic_baseline_payment_24));
-        settingsList.add(new Settings(getString(R.string.language),R.drawable.ic_baseline_language_24));
-        settingsList.add(new Settings(getString(R.string.expenses),R.drawable.ic_baseline_attach_money_24));
-        settingsList.add(new Settings(getString(R.string.company_info),R.drawable.ic_baseline_perm_contact_calendar_24));
-        settingsList.add(new Settings(getString(R.string.customer_service),R.drawable.ic_baseline_person_24));
-        settingsList.add(new Settings(getString(R.string.logout),R.drawable.ic_baseline_login_24));
+        settingsList.add(new Settings(getString(R.string.profile),R.drawable.profile));
+        settingsList.add(new Settings(getString(R.string.shared_vehicles),R.drawable.sharedvehicle));
+        settingsList.add(new Settings(getString(R.string.alert_setting),R.drawable.alert));
+        settingsList.add(new Settings(getString(R.string.payment_guide),R.drawable.payment));
+        settingsList.add(new Settings(getString(R.string.language),R.drawable.language));
+        settingsList.add(new Settings(getString(R.string.expenses),R.drawable.dollar));
+        settingsList.add(new Settings(getString(R.string.company_info),R.drawable.companyinfo));
+        settingsList.add(new Settings(getString(R.string.customer_service),R.drawable.customerservice));
+        settingsList.add(new Settings(getString(R.string.check_for_update),R.drawable.termsofservice));
+        settingsList.add(new Settings(getString(R.string.logout),R.drawable.logout));
 
         adapter = new SettingsAdapter(settingsList, new SettignsClickListener() {
             @Override
@@ -80,6 +81,10 @@ public class SettingsFragment extends Fragment {
                 }else if (adapterPosition == 7){
                     startActivity(new Intent(getContext(), CustomerServiceActivity.class));
                 }else if (adapterPosition == 8){
+//                    startActivity(new Intent(getContext(), CustomerServiceActivity.class));
+                }else if (adapterPosition == 9){
+//                    startActivity(new Intent(getContext(), CustomerServiceActivity.class));
+                }else if (adapterPosition == 10){
 //                    startActivity(new Intent(getContext(), SharedVehicleActivity.class));
                 }
             }

@@ -23,15 +23,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Language"
+                android:text="@string/alert_setting"
                 android:textColor="@color/black"
                 android:textSize="@dimen/largeText"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="App Language Setting"
+                android:text="@string/setting_vehicle_alerts"
                 android:textColor="@color/black"
                 android:textSize="@dimen/normalText" />
 
@@ -55,21 +55,57 @@
             android:orientation="vertical"
             android:layout_margin="@dimen/ssmall_padding">
 
-            <Switch
-                android:id="@+id/ignition"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ignition Alert"
-                android:textSize="@dimen/normalText"
-                android:layout_margin="@dimen/standard_padding"/>
+                android:orientation="vertical"
+                android:layout_margin="@dimen/ssmall_padding">
 
-            <Switch
-                android:id="@+id/fuelcut"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Fuel-Cut Alert"
-                android:textSize="@dimen/normalText"
-                android:layout_margin="@dimen/standard_padding"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ignition"
+                        android:layout_margin="@dimen/standard_padding"/>
+
+                    <Switch
+                        android:id="@+id/english"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ignition_alert"
+                        android:textSize="@dimen/normalText"
+                        android:layout_margin="@dimen/standard_padding"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/fuel"
+                        android:padding="8dp"
+                        android:layout_margin="@dimen/standard_padding"/>
+
+                    <Switch
+                        android:id="@+id/fuelcut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fuel_cut_alert"
+                        android:textSize="@dimen/normalText"
+                        android:layout_margin="@dimen/standard_padding"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 

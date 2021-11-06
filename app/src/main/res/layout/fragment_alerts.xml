@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFF1F1"
-    tools:context=".ui.viewall.AllInMapFragment">
+    tools:context=".ui.alerts.AlertsFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="View All In Map Fragment"
+        android:text="@string/no_alerts"
         android:textColor="@color/black"/>
-</LinearLayout>
+
+</RelativeLayout>

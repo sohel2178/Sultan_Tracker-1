@@ -16,7 +16,8 @@
     <string name="english">ইংরেজি</string>
     <string name="settings">সেটিংস</string>
     <string name="account_amp_vehicle_information">একাউন্ট এবং ভেহিক্যাল তথ্য</string>
-
+    <string name="terms_of_service">সেবা পাবার শর্ত</string>
+    <string name="privacy_policy">গোপনীয়তা নীতি</string>
     <string name="logout">লগআউট</string>
     <string name="company_info">কোম্পানীর তথ্য</string>
     <string name="expenses">ব্যায়সমুহ</string>
@@ -25,6 +26,16 @@
     <string name="alert_setting">এলার্ট সেটিংস</string>
     <string name="shared_vehicles">শেয়ারড ভেহিকেল</string>
     <string name="profile">প্রোফাইল</string>
+    <string name="no_notification">কোন নোটিফিকেশন নেই</string>
+    <string name="setting_vehicle_alerts">সেটিং ভেহিকেল এলার্টস</string>
+    <string name="ignition_alert">ইগনিশন এলার্ট</string>
+    <string name="fuel_cut_alert">ফুয়েল-কাট এলার্ট</string>
+    <string name="user_profile_settings">ব্যবহারকারী প্রোফাইল সেটিং</string>
+    <string name="name">নাম</string>
+    <string name="contact">যোগাযোগ</string>
+    <string name="organization_name">প্রতিষ্ঠানের নাম</string>
+    <string name="address">ঠিকানা</string>
+    <string name="update">আপডেট করুন</string>
 
     <string name="notification">নোটিফিকেশন</string>
     <string name="alerts">এলার্টস</string>
