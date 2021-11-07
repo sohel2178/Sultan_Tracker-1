@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
     tools:context=".ui.settings.sharedvehicle.SharedVehicleActivity">
 
     <LinearLayout
@@ -71,7 +72,6 @@
                 app:iconifiedByDefault="false"
                 app:queryHint="Search Vehicle by Vehicle Reg, Driver name or phone"
                 android:minHeight="40dp"
-                android:layout_margin="5dp"
                 android:layout_gravity="center_vertical"/>
 
         </LinearLayout>

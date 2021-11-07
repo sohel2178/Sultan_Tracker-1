@@ -31,4 +31,13 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="ShapeAppearanceOverlay.MyApp.MaterialCardView.Rounded" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeBottomLeft">135dp</item>
+        <item name="cornerSizeBottomRight">135dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+
 </resources>

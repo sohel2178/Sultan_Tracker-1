@@ -5,20 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
     tools:context=".ui.settings.language.LanguageSettingActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@color/colorPrimary">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@color/colorPrimary"
+            android:layout_height="0dp"
+            android:layout_weight="5"
             android:orientation="vertical"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="40dp">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:layout_width="match_parent"
@@ -26,15 +26,24 @@
                 android:text="@string/language_settings"
                 android:textColor="@color/black"
                 android:textSize="@dimen/largeText"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/setting_app_language"
                 android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
                 android:textSize="@dimen/normalText" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
         </LinearLayout>
 
     </LinearLayout>
@@ -43,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="@dimen/medium_padding"
-        app:cardElevation="@dimen/small_padding"
+        app:cardElevation="2dp"
         android:layout_marginTop="140dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -51,9 +60,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="@dimen/ssmall_padding">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"

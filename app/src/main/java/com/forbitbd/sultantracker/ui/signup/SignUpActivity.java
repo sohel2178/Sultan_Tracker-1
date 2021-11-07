@@ -1,6 +1,5 @@
 package com.forbitbd.sultantracker.ui.signup;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -45,6 +44,6 @@ public class SignUpActivity extends BaseActivity implements SignUpContract.View 
             public void run() {
                 handler.post(update);
             }
-        }, 2000, 2000);
+        }, 2000, 1000);
     }
 }

@@ -38,16 +38,14 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(LoginActivity.this,SignUpActivity.class));
             }
         });
         btnlogin = findViewById(R.id.login);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(LoginActivity.this,MainActivity.class));
             }
         });
 

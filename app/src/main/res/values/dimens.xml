@@ -17,4 +17,11 @@
     <dimen name="mediumText">20sp</dimen>
     <dimen name="largeText">25sp</dimen>
 
+
+    <dimen name="project_icon_size">32dp</dimen>
+    <dimen name="driver_image_size">72dp</dimen>
+    <dimen name="indicator_dim">36dp</dimen>
+    <dimen name="car_icon_size">48dp</dimen>
+    <dimen name="report_text_size">10sp</dimen>
+
 </resources>

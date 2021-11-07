@@ -3,8 +3,8 @@
     package="com.forbitbd.sultantracker">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SultanTracker">
+        <activity
+            android:name=".ui.command.CommandActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.listview.shareduser.SharedUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.listview.searchuser.SearchUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.listview.editdevice.EditDeviceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.listview.map.MapActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.settings.expense.ExpenseActivity"
             android:exported="true" />
