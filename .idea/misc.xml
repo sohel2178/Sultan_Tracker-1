@@ -16,13 +16,15 @@
         <entry key="..\:/Sultan Tracker/app/src/main/res/drawable/ic_baseline_payment_24.xml" value="0.2203125" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/drawable/ripple.xml" value="0.2203125" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_alert_setting.xml" value="0.17980072463768115" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_command.xml" value="0.18432971014492755" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_company_info.xml" value="0.25" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_customer_service.xml" value="0.22" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_dashboard.xml" value="0.12771739130434784" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_edit_device.xml" value="0.19010416666666666" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_expense.xml" value="0.20244565217391305" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_language_setting.xml" value="0.19882246376811594" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_launcher.xml" value="0.12771739130434784" />
-        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_login.xml" value="0.13632246376811594" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_payment.xml" value="0.25" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_profile.xml" value="0.17617753623188406" />
@@ -32,6 +34,7 @@
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/activity_sign_up.xml" value="0.1331521739130435" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_alerts.xml" value="0.19384057971014493" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_all_in_map.xml" value="0.12409420289855072" />
+        <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_dialogbox.xml" value="0.25" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_home.xml" value="0.15" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_list_view.xml" value="0.13269927536231885" />
         <entry key="..\:/Sultan Tracker/app/src/main/res/layout/fragment_notification.xml" value="0.19384057971014493" />

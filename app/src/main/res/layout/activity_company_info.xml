@@ -50,7 +50,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="@dimen/medium_padding"
         app:cardElevation="2dp"
         android:layout_marginTop="140dp"
@@ -171,12 +171,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="@dimen/medium_padding"
-                            android:background="@color/colorPrimary"
+                            android:background="@color/BackgroundColor"
                             android:gravity="center"
                             android:padding="@dimen/medium_padding"
                             android:text="Our Service"
                             android:textColor="@android:color/black"
-                            android:textSize="@dimen/mediumText"
+                            android:textSize="@dimen/normalText"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -252,7 +252,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="More Services"
-                    android:layout_margin="20dp"
+                    android:layout_margin="15dp"
                     android:textColor="@color/black"/>
 
             </LinearLayout>

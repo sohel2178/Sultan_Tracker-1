@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.forbitbd.sultantracker.R;
+import com.forbitbd.sultantracker.models.Settings;
 import com.forbitbd.sultantracker.ui.settings.alertsetting.AlertSettingActivity;
 import com.forbitbd.sultantracker.ui.settings.company.CompanyInfoActivity;
 import com.forbitbd.sultantracker.ui.settings.customerservice.CustomerServiceActivity;

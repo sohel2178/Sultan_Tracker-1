@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.forbitbd.sultantracker.R;
+import com.forbitbd.sultantracker.models.Settings;
 
 import java.util.List;
 

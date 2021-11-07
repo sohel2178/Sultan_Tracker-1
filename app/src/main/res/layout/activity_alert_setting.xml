@@ -5,20 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
     tools:context=".ui.settings.alertsetting.AlertSettingActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@color/colorPrimary">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@color/colorPrimary"
+            android:layout_height="0dp"
+            android:layout_weight="5"
             android:orientation="vertical"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="40dp">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:layout_width="match_parent"
@@ -26,15 +26,24 @@
                 android:text="@string/alert_setting"
                 android:textColor="@color/black"
                 android:textSize="@dimen/largeText"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/setting_vehicle_alerts"
                 android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
                 android:textSize="@dimen/normalText" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
         </LinearLayout>
 
     </LinearLayout>
@@ -43,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="@dimen/medium_padding"
-        app:cardElevation="@dimen/small_padding"
+        app:cardElevation="2dp"
         android:layout_marginTop="140dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -51,59 +60,50 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="@dimen/ssmall_padding">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="@dimen/ssmall_padding">
+                android:orientation="horizontal">
 
-                <LinearLayout
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ignition"
+                    android:layout_margin="@dimen/standard_padding"/>
+
+                <Switch
+                    android:id="@+id/english"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="@string/ignition_alert"
+                    android:textSize="@dimen/normalText"
+                    android:layout_margin="@dimen/standard_padding"/>
 
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:padding="8dp"
-                        android:src="@drawable/ignition"
-                        android:layout_margin="@dimen/standard_padding"/>
+            </LinearLayout>
 
-                    <Switch
-                        android:id="@+id/english"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ignition_alert"
-                        android:textSize="@dimen/normalText"
-                        android:layout_margin="@dimen/standard_padding"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                </LinearLayout>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/fuel"
+                    android:padding="8dp"
+                    android:layout_margin="@dimen/standard_padding"/>
 
-                <LinearLayout
+                <Switch
+                    android:id="@+id/fuelcut"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@drawable/fuel"
-                        android:padding="8dp"
-                        android:layout_margin="@dimen/standard_padding"/>
-
-                    <Switch
-                        android:id="@+id/fuelcut"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/fuel_cut_alert"
-                        android:textSize="@dimen/normalText"
-                        android:layout_margin="@dimen/standard_padding"/>
-
-                </LinearLayout>
+                    android:text="@string/fuel_cut_alert"
+                    android:textSize="@dimen/normalText"
+                    android:layout_margin="@dimen/standard_padding"/>
 
             </LinearLayout>
 

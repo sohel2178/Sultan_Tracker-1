@@ -1,11 +1,12 @@
-package com.forbitbd.sultantracker.ui.settings;
+package com.forbitbd.sultantracker.models;
 
-public class Settings {
+public class Command {
 
     private String title;
     private int image;
 
-    public Settings(String title, int image) {
+
+    public Command(String title, int image) {
         this.title = title;
         this.image = image;
     }

@@ -43,6 +43,7 @@
     <string name="about_our_company_amp_service"><![CDATA[About Our Company & Service]]></string>
     <string name="check_for_update">Check For Update</string>
     <string name="no_alerts">No Alerts</string>
+    <string name="virtual_control_platform">Virtual Control Platform</string>
 
     <string-array name="title_list">
         <item>Step 1</item>

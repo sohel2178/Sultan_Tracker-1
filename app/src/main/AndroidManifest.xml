@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SultanTracker">
         <activity
-            android:name=".ui.command.CommandActivity"
+            android:name=".ui.listview.command.CommandActivity"
             android:exported="true" />
         <activity
             android:name=".ui.listview.shareduser.SharedUserActivity"
