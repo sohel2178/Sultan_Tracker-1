@@ -110,7 +110,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@color/BackgroundColor"
                 android:gravity="center"
                 android:padding="@dimen/medium_padding"
                 android:text="Contact Us"
@@ -130,7 +130,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="@dimen/medium_padding">
+                    android:padding="@dimen/standard_padding">
 
                     <TextView
                         android:layout_width="0dp"
@@ -138,7 +138,7 @@
                         android:layout_height="wrap_content"
                         android:text="Customer Support"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/mediumText" />
+                        android:textSize="@dimen/normalText" />
 
                     <info.androidhive.fontawesome.FontTextView
                         android:layout_width="0dp"
@@ -159,7 +159,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="@dimen/medium_padding">
+                    android:padding="@dimen/standard_padding">
 
                     <TextView
                         android:layout_width="0dp"
@@ -167,7 +167,7 @@
                         android:layout_height="wrap_content"
                         android:text="Sales Department"
                         android:layout_gravity="center_vertical"
-                        android:textSize="@dimen/mediumText" />
+                        android:textSize="@dimen/normalText" />
 
                     <info.androidhive.fontawesome.FontTextView
                         android:layout_width="0dp"
