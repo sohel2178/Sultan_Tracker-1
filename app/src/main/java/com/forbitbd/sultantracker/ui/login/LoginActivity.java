@@ -13,19 +13,21 @@ import com.forbitbd.sultantracker.ui.main.MainActivity;
 import com.forbitbd.sultantracker.ui.signup.SignUpActivity;
 import com.forbitbd.sultantracker.ui.main.SliderAdapter;
 import com.forbitbd.sultantracker.utils.BaseActivity;
+import com.google.android.gms.common.SignInButton;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class LoginActivity extends BaseActivity implements LoginContract.View{
+public class LoginActivity extends BaseActivity implements LoginContract.View, View.OnClickListener {
 
     private ViewPager viewPager;
     int images[] = {R.drawable.car,R.drawable.scooty,R.drawable.cng};
     int currentPageCounter = 0;
 
+    private SignInButton btngoogle;
     private MaterialButton btnlogin;
-    private TextView btnsignup;
+    private TextView btnsignup, btnforgot;
     private LoginPresenter mPresenter;
 
     @Override
@@ -34,20 +36,16 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
         setContentView(R.layout.activity_login);
 
         mPresenter = new LoginPresenter(this);
-        btnsignup = findViewById(R.id.signup);
-        btnsignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,SignUpActivity.class));
-            }
-        });
         btnlogin = findViewById(R.id.login);
-        btnlogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,MainActivity.class));
-            }
-        });
+        btngoogle = findViewById(R.id.google);
+        btnsignup = findViewById(R.id.signup);
+        btnforgot = findViewById(R.id.forgot_password);
+
+
+        btnlogin.setOnClickListener(this);
+        btngoogle.setOnClickListener(this);
+        btnsignup.setOnClickListener(this);
+        btnforgot.setOnClickListener(this);
 
         viewPager = findViewById(R.id.slideview);
         viewPager.setAdapter(new SliderAdapter(images, LoginActivity.this));
@@ -75,5 +73,19 @@ public class LoginActivity extends BaseActivity implements LoginContract.View{
     public void onBackPressed() {
         finishAffinity();
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.login){
+            startActivity(new Intent(LoginActivity.this,MainActivity.class));
+        }else if(id == R.id.google){
+
+        }else if(id == R.id.signup){
+            startActivity(new Intent(LoginActivity.this,SignUpActivity.class));
+        }else if (id == R.id.forgot_password){
+
+        }
     }
 }

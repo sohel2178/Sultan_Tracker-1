@@ -44,6 +44,13 @@
     <string name="check_for_update">Check For Update</string>
     <string name="no_alerts">No Alerts</string>
     <string name="virtual_control_platform">Virtual Control Platform</string>
+    <string name="please_login_with_email_amp_password"><![CDATA[Please Login with Email & Password]]></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_any_account">Don\'t have any account?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">Or</string>
 
     <string-array name="title_list">
         <item>Step 1</item>

@@ -1,6 +1,8 @@
 package com.forbitbd.sultantracker.models;
 
-public class Command {
+import java.io.Serializable;
+
+public class Command implements Serializable {
 
     private String title;
     private int image;

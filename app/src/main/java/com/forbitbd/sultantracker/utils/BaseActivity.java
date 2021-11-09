@@ -24,7 +24,6 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         loadLocale();
-       checkInternet();
     }
 
     public void setLocale(String language){
@@ -45,13 +44,13 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
-    public void checkInternet(){
-        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
-        NetworkInfo wifi = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
-        NetworkInfo data = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
-
-        if ((wifi != null && data != null) && (wifi.isConnected() | data.isConnected())){
-        }else{
-        }
-    }
+//    public void checkInternet(){
+//        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+//        NetworkInfo wifi = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+//        NetworkInfo data = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+//
+//        if ((wifi != null && data != null) && (wifi.isConnected() | data.isConnected())){
+//        }else{
+//        }
+//    }
 }

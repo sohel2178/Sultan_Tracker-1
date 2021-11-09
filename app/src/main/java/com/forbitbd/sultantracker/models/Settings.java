@@ -1,6 +1,8 @@
 package com.forbitbd.sultantracker.models;
 
-public class Settings {
+import java.io.Serializable;
+
+public class Settings implements Serializable {
 
     private String title;
     private int image;

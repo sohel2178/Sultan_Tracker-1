@@ -8,7 +8,6 @@
     <dimen name="large_padding">16dp</dimen>
     <dimen name="xlarge_padding">20dp</dimen>
 
-
 <!--    <dimen name="basic">16dp</dimen>-->
     <dimen name="normal">18dp</dimen>
 <!--    <dimen name="standard">20dp</dimen>-->

@@ -1,8 +1,9 @@
 package com.forbitbd.sultantracker.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Alert {
+public class Alert implements Serializable {
 
     private String _id;
     private String title;
