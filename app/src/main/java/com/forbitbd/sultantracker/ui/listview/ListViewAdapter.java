@@ -22,9 +22,9 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.ListVi
 
 
     private List<Device> deviceList;
-    private ListViewContract.View listener;
+    private ListViewClickListener listener;
 
-    public ListViewAdapter(List<Device> deviceList) {
+    public ListViewAdapter(List<Device> deviceList, ListViewClickListener listener) {
         this.deviceList = deviceList;
         this.listener = listener;
     }
@@ -76,18 +76,26 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.ListVi
 
         public void bind(Device device) {
 
+
             imageView.setCircleColor(R.color.green);
+            imageView.setImageResource(R.drawable.cng);
             reg.setText(device.getRegistration_number());
             status.setText("ON");
             mileage.setText(device.getMileage());
-            location.setText("Dhaka, Bangladesh");
+            location.setText("Paikpara, Ahmed Nagar, Mirpur-1, Dhaka, Bangladesh");
         }
 
         @Override
         public void onClick(View v) {
             int id = v.getId();
-            if (id==R.id.more){
-                listener.OnMoreClick(deviceList.get(getAdapterPosition()));
+            if (id==R.id.map){
+                listener.OnMapClick(getAdapterPosition());
+            }else if (id == R.id.command){
+                listener.OnCommandClick(getAdapterPosition());
+            }else if (id == R.id.details){
+                listener.OnDetailClick(getAdapterPosition());
+            }else if (id == R.id.more){
+                listener.OnMoreClick(getAdapterPosition());
             }
         }
     }

@@ -39,17 +39,17 @@ public class CommandActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
 
         commandList = new ArrayList<>();
-        commandList.add(new Command("POWER ON",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("POWER OFF",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("POWER ON SMS",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("POWER OFF SMS",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("GET LOCATION SMS",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("VIBRATION ALARM ON",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("VIBRATION ALARM OFF",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("SET TIME ZONE",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("RESTRICT BOUNDARY",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("BOUNDARIES",R.drawable.ic_baseline_settings_24));
-        commandList.add(new Command("CREATE ROUTE",R.drawable.ic_baseline_settings_24));
+        commandList.add(new Command(getString(R.string.power_on),R.drawable.power));
+        commandList.add(new Command(getString(R.string.power_off),R.drawable.power));
+        commandList.add(new Command(getString(R.string.power_on_sms),R.drawable.power));
+        commandList.add(new Command(getString(R.string.power_off_sms),R.drawable.power));
+        commandList.add(new Command(getString(R.string.get_location_sms),R.drawable.location));
+        commandList.add(new Command(getString(R.string.vibration_alarm_on),R.drawable.vibrate));
+        commandList.add(new Command(getString(R.string.vibration_alarm_off),R.drawable.vibrate));
+        commandList.add(new Command(getString(R.string.set_time_zone),R.drawable.time_zone));
+        commandList.add(new Command(getString(R.string.restrict_boundary),R.drawable.fence));
+        commandList.add(new Command(getString(R.string.boundaries),R.drawable.fence));
+        commandList.add(new Command(getString(R.string.create_route),R.drawable.route));
 
         adapter = new CommandAdapter(commandList, new CommandClickListener() {
             @Override

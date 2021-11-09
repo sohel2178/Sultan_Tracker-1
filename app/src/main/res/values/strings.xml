@@ -51,6 +51,17 @@
     <string name="sign_up">SIGN UP</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="or">Or</string>
+    <string name="power_on">POWER ON</string>
+    <string name="power_off">POWER OFF</string>
+    <string name="power_on_sms">POWER ON SMS</string>
+    <string name="power_off_sms">POWER OFF SMS</string>
+    <string name="get_location_sms">GET LOCATION SMS</string>
+    <string name="vibration_alarm_on">VIBRATION ALARM ON</string>
+    <string name="vibration_alarm_off">VIBRATION ALARM OFF</string>
+    <string name="set_time_zone">SET TIME ZONE</string>
+    <string name="restrict_boundary">RESTRICT BOUNDARY</string>
+    <string name="boundaries">BOUNDARIES</string>
+    <string name="create_route">CREATE ROUTE</string>
 
     <string-array name="title_list">
         <item>Step 1</item>

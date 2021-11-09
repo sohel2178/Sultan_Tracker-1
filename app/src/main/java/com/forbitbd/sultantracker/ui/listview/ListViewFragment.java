@@ -1,5 +1,6 @@
 package com.forbitbd.sultantracker.ui.listview;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,6 +18,8 @@ import android.view.ViewGroup;
 import com.forbitbd.sultantracker.R;
 import com.forbitbd.sultantracker.fragment.DialogboxFragment;
 import com.forbitbd.sultantracker.models.Device;
+import com.forbitbd.sultantracker.ui.listview.command.CommandActivity;
+import com.forbitbd.sultantracker.ui.listview.editdevice.EditDeviceActivity;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.card.MaterialCardView;
 
@@ -58,17 +61,32 @@ public class ListViewFragment extends Fragment implements ListViewContract.View{
         deviceList.add(new Device("Saimul Hoque","01881269553",R.drawable.ic_baseline_person_24,"Dhk-Metro Cha-13-6425", "Cng", "01821465858", "Car", "0.5", true));
         deviceList.add(new Device("Saimul Hoque","01881269553",R.drawable.ic_baseline_person_24,"Dhk-Metro Cha-13-6425", "Scooty", "01821465858", "Car", "0.5", true));
 
-        adapter = new ListViewAdapter(deviceList);
+        adapter = new ListViewAdapter(deviceList, new ListViewClickListener() {
+            @Override
+            public void OnMoreClick(int adapterPosition) {
+                DialogboxFragment dialogboxFragment = new DialogboxFragment();
+                dialogboxFragment.setCancelable(true);
+                dialogboxFragment.show(getFragmentManager(),"abcd");
+            }
+
+            @Override
+            public void OnDetailClick(int adapterPosition) {
+                startActivity(new Intent(getContext(), EditDeviceActivity.class));
+            }
+
+            @Override
+            public void OnCommandClick(int adapterPosition) {
+                startActivity(new Intent(getContext(), CommandActivity.class));
+            }
+
+            @Override
+            public void OnMapClick(int adapterPosition) {
+
+            }
+        });
 
         recyclerView.setAdapter(adapter);
 
         return view;
-    }
-
-    @Override
-    public void OnMoreClick(Device device) {
-        DialogboxFragment dialogboxFragment = new DialogboxFragment();
-        dialogboxFragment.setCancelable(true);
-        dialogboxFragment.show(getFragmentManager(),"abcd");
     }
 }

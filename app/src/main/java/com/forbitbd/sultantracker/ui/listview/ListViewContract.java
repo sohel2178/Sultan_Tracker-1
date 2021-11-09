@@ -9,6 +9,6 @@ public interface ListViewContract {
     }
 
     interface View{
-        void OnMoreClick(Device device);
+
     }
 }
