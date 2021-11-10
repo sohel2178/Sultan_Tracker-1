@@ -4,11 +4,12 @@ import com.forbitbd.sultantracker.models.Device;
 
 public interface ListViewClickListener {
 
-    void OnMoreClick(int adapterPosition);
 
-    void OnDetailClick(int adapterPosition);
+    void OnMapClick(Device device);
 
-    void OnCommandClick(int adapterPosition);
+    void OnCommandClick(Device device);
 
-    void OnMapClick(int adapterPosition);
+    void OnDetailClick(Device device);
+
+    void OnMoreClick(Device device);
 }

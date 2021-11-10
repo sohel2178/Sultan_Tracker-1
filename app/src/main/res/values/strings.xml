@@ -62,6 +62,7 @@
     <string name="restrict_boundary">RESTRICT BOUNDARY</string>
     <string name="boundaries">BOUNDARIES</string>
     <string name="create_route">CREATE ROUTE</string>
+    <string name="location_rationale">Please Provide Location Permission</string>
 
     <string-array name="title_list">
         <item>Step 1</item>

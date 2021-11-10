@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/call_driver"
+        android:title="Call To Driver"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/share_vehicle"
+        android:title="Share Vehicle"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/shared_user"
+        android:title="Shared User"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:enabled="true" />
+
+</menu>

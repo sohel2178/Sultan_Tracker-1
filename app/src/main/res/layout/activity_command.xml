@@ -5,37 +5,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BackgroundColor"
     tools:context=".ui.listview.command.CommandActivity">
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@color/colorPrimary">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@color/colorPrimary"
+            android:layout_height="0dp"
+            android:layout_weight="5"
             android:orientation="vertical"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="40dp">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Control"
                 android:textColor="@color/black"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/largeText"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Control Vehicle With Command"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:layout_marginLeft="15dp"
+                android:textSize="@dimen/normalText" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@color/BackgroundColor">
         </LinearLayout>
 
     </LinearLayout>
@@ -44,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="@dimen/medium_padding"
-        app:cardElevation="@dimen/small_padding"
+        app:cardElevation="2dp"
         android:layout_marginTop="140dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"

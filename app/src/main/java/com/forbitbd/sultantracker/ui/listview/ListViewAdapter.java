@@ -1,5 +1,6 @@
 package com.forbitbd.sultantracker.ui.listview;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -80,7 +81,16 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.ListVi
             imageView.setCircleColor(R.color.green);
             imageView.setImageResource(R.drawable.cng);
             reg.setText(device.getRegistration_number());
-            status.setText("ON");
+
+            if (device.isIs_inactive()==false){
+                status.setText("OFF");
+                status.setTextColor(Color.parseColor("#F10505"));
+            }else{
+                status.setText("ON");
+                status.setTextColor(Color.parseColor("#00FF00" +
+                        ""));
+            }
+
             mileage.setText(device.getMileage());
             location.setText("Paikpara, Ahmed Nagar, Mirpur-1, Dhaka, Bangladesh");
         }
@@ -89,13 +99,13 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.ListVi
         public void onClick(View v) {
             int id = v.getId();
             if (id==R.id.map){
-                listener.OnMapClick(getAdapterPosition());
+                listener.OnMapClick(deviceList.get(getAdapterPosition()));
             }else if (id == R.id.command){
-                listener.OnCommandClick(getAdapterPosition());
+                listener.OnCommandClick(deviceList.get(getAdapterPosition()));
             }else if (id == R.id.details){
-                listener.OnDetailClick(getAdapterPosition());
+                listener.OnDetailClick(deviceList.get(getAdapterPosition()));
             }else if (id == R.id.more){
-                listener.OnMoreClick(getAdapterPosition());
+                listener.OnMoreClick(deviceList.get(getAdapterPosition()));
             }
         }
     }
